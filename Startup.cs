@@ -45,7 +45,7 @@ namespace DatingApp.API
                 });
 
             // Automatically perform database migration
-            services.BuildServiceProvider().GetService<MyDatabaseContext>().Database.Migrate();
+            services.BuildServiceProvider().GetService<DatabaseContext>().Database.Migrate();
             services.AddCors();
             services.Configure<CloudinarySettings>(Configuration.GetSection("CloudinarySettings"));
             services.AddAutoMapper();
