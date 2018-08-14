@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAoJIorO4cEkuhmKMstIT2tQAAAAACAAAAAAAQZgAAAAEAACAAAADzp3fEyll3VdGg1HUyscHAEHen40UP60ZlmeTYLrYcuwAAAAAOgAAAAAIAACAAAAAiEgKby69tfqhS9rsIiL/wtJyfMCIutmBKUHtEU0MlwYAAAACGoUyez4m3GufXYAkSb+sCMo/Ca0vfmHuSDy3/nPpwT8TE9+7XY5r7yxGK0e9bxGcUVRn5R4/qiTO9lXqDLMxpafZTphDB/mEjSe4tevuioHKyFuQZ++4pAqlHi798y94BGNptPmVFLDzxAqpHi8a49JMxdCyuAxQQ7rxsm6h2KEAAAAAk/xaavvy0bqclDJ4q01H9YTgxM+a6FZLg1+OiZX6+Z5eGgDTd2MJxJRYb1imbD2ffgHHhbRVYG88HrlKkdY7Y</EncryptedPassword>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Server=tcp:da-sql-flagie.database.windows.net,1433;Initial Catalog=datingAppDb;Persist Security Info=False;User ID=appuser;Password=Flagie@1214;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="DatingApp.API.Data.DataContext">
+      <Value>Server=tcp:da-sql-flagie.database.windows.net,1433;Initial Catalog=datingAppDb;Persist Security Info=False;User ID=appuser;Password=Flagie@1214;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>
