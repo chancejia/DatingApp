@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAoJIorO4cEkuhmKMstIT2tQAAAAACAAAAAAAQZgAAAAEAACAAAADTiieAQwiS/LcQeWDaid4htrubTDIf6o2BSJnFmct0fgAAAAAOgAAAAAIAACAAAACIvs+6xTmNGa/vXU+FWqt8OgZ3cLxqqqYBZUGyFgA19IAAAACDOJb6pJYASy1UQ+llD7rjE2/TLQUpqHcKpG5bng0SSphm14CKOzvpRq6qmx+J9i5mxJmP9r/d8vwUCriZ2FWZR30Y2fhsKydCw3Bhy2R95+rib2erJT3/pc9kTb0Ikwj5ScxjBt2GCf9Fs6UgUFqeBQxuv+boO9uyUl+kISRxc0AAAACeD016uRBtB82SzHwOxCaskiyVsAIyP+6X7BSkEbs69PdHFQhoxGLHujTCZcjRuFJS7NOZKHiir+8P7MIlAUI6</EncryptedPassword>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Data Source=tcp:datingappapi-flagiedbserver.database.windows.net,1433;Initial Catalog=DatingAppAPI-Flagie_db;User Id=appuser@datingappapi-flagiedbserver;Password=Flagie@1214</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="DatingApp.API.Data.DataContext">
+      <Value>Data Source=tcp:datingappapi-flagiedbserver.database.windows.net,1433;Initial Catalog=DatingAppAPI-Flagie_db;User Id=appuser@datingappapi-flagiedbserver;Password=Flagie@1214</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>

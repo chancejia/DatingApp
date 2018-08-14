@@ -1,6 +1,6 @@
-using System.Collections.Generic;
 using DatingApp.API.Models;
 using Newtonsoft.Json;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace DatingApp.API.Data
@@ -41,7 +41,7 @@ namespace DatingApp.API.Data
             {
                 passwordSalt = hmac.Key;
                 passwordHash = hmac.ComputeHash(System.Text.Encoding.UTF8.GetBytes(password));
-            } 
+            }
         }
     }
 }
